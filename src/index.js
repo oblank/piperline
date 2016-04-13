@@ -57,6 +57,7 @@ function createPipe(handler, next) {
 
 class Pipeline {
     constructor(pipes) {
+        console.log(pipes);
         this[FIELDS.emitter] = new EventEmitter();
         this[FIELDS.pipes] = [];
         this[FIELDS.counter] = 0;
